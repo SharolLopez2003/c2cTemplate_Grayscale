@@ -1,5 +1,5 @@
 /*!
- * Start Bootstrap - Grayscale v5.0.1 (https://startbootstrap.com/template-overviews/grayscale)
+ * Start Bootstra - Grayscale v5.0.1 (https://startbootstrap.com/template-overviews/grayscale)
  * Copyright 2013-2018 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
  */
@@ -89,7 +89,7 @@
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/bg-masthead.jpg");
+  background:white(, rgba(url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMwRpbRJyfyHPE3d8c1lRUVHxeWL6nvjJNgq4ziPsA5rlycZOT");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
