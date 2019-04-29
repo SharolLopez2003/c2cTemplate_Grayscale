@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Grayscale - My Familys Roof Repair</title>
+    <title>ML Roofing Artisans & Remodeling </title>
 
     <!-- Bootstrap core CSS -->
     <link href="../static/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -35,15 +35,10 @@
           Menu
           <i class="fas fa-bars"></i>
         </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+              <a  class="nav-link js-scroll-trigger" href="#about">About</a>
             </li>
-            <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
             </li>
-            <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#signup">Contact</a>
             </li>
           </ul>
@@ -67,9 +62,8 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h2 id="BilingualTitle" class="mb-4">We are bilingual</h2>
-
-            <p class="text-white-50 "><i class="fas fa-language" style=" font-size: 35px "></i>
+            <h2 id="BilingualTitle" style=" font-size: 50px " class="mb-4">We are a bilingual company.</h2>
+            <p class="text-white-50 "><i class="fas fa-language"  id="AboutHidden" style=" font-size: 60px "></i>
           </div>
         </div>
       </div>
@@ -78,6 +72,12 @@
     <!-- Projects Section -->
     <section id="projects" class="projects-section bg-light">
       <div class="container">
+          <button type="button" class="btn btn-dark" onclick="document.getElementById('AboutDetails').innerHTML = '<img src=&quot;https://upload.wikimedia.org/wikipedia/en/thumb/6/63/IMG_%28business%29.svg/220px-IMG_%28business%29.svg.png&quot;>'" >About The Company</button>
+          <div id="AboutDetails" class="card">
+             <div class="card-body">
+                    This is some text within a card body.
+                 </div>
+        </div>
 
         <!-- Featured Project Row -->
         <div class="row align-items-center no-gutters mb-4 mb-lg-5">
@@ -85,8 +85,8 @@
             <img class="img-fluid mb-3 mb-lg-0" src="http://www.frost-roofing.com/res/uploads/media/commercial-and-industrial-roofing.png" alt="">
           </div>
           <div class="col-xl-4 col-lg-5">
-            <div class="featured-text text-center text-lg-left">
               <h4>Shoreline</h4>
+                  <div class="featured-text text-center text-lg-left">
               <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
             </div>
           </div>
@@ -95,7 +95,7 @@
         <!-- Project One Row -->
         <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
           <div class="col-lg-6">
-            <img class="img-fluid" src="https://www.summit-yachts.com/wp-content/uploads/2018/01/Self-Adhesive-Rolled-Roofing.jpg" alt="">
+              <img class="img-fluid" src="https://www.summit-yachts.com/wp-content/uploads/2018/01/Self-Adhesive-Rolled-Roofing.jpg" alt="">
           </div>
           <div class="col-lg-6">
             <div class="bg-black text-center h-100 project">
@@ -107,13 +107,12 @@
                 </div>
               </div>
             </div>
-          </div>
         </div>
 
         <!-- Project Two Row -->
         <div class="row justify-content-center no-gutters">
           <div class="col-lg-6">
-            <img class="img-fluid" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMwRpbRJyfyHPE3d8c1lRUVHxeWL6nvjJNgq4ziPsA5rlycZOT" style= "width:100%" alt="">
+            <img class="img-fluid" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIlhANoDXMN899xAAaBlHXp60S46OPnbxrwZA7ywFHAzq0GTPg" style= "width:100%" alt="">
           </div>
           <div class="col-lg-6 order-lg-first">
             <div class="bg-black text-center h-100 project">
