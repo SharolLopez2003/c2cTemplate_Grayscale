@@ -18,13 +18,31 @@
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script>
 
+        function showAlert(e) {
+            var event = window.event;
+            if (event.keyCode=='13') {
+                var email = document.getElementById("signup-input").value
+                if (email) {
+                    alert("Thank you for adding your email, we will contact you soon. " + email );
+                }
+            }
+
+        }
+
+        function LoadImg() {
+            var html= '<div class="CenterImg"><img src="https://www.callreeves.com/wp-content/uploads/2014/06/Free-Roofing-Inspections-Hail-Damage-Storm-Damage-Repair-Reeves-Roofing-Reeves-Construction.png"  style="max-width:100%; height:auto;"></div>'
+            html= html+'<div class="CenterImg"><img src="https://cdn.pixabay.com/photo/2017/10/26/16/51/roofers-2891664_960_720.jpg" style="max-width:100%; height:auto;"></div>' + '<div class="CenterImg"><img src= "https://www.publicdomainpictures.net/pictures/180000/nahled/robin-on-roofing.jpg" style "max-width:100%; height:auto;"></div>'
+            document.getElementById('AboutDetails').innerHTML = html
+        }
+    </script>
 
     <!-- Custom styles for this template -->
 
 
   </head>
-
+F
   <body id="page-top">
 
     <!-- Navigation -->
@@ -35,9 +53,9 @@
           Menu
           <i class="fas fa-bars"></i>
         </button>
-              <a  class="nav-link js-scroll-trigger" href="#about">About</a>
+              <a  class="nav-link js-scroll-trigger" href="#about">Projects</a>
             </li>
-              <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+              <a class="nav-link js-scroll-trigger" href="#projects">About</a>
             </li>
               <a class="nav-link js-scroll-trigger" href="#signup">Contact</a>
             </li>
@@ -72,10 +90,10 @@
     <!-- Projects Section -->
     <section id="projects" class="projects-section bg-light">
       <div class="container">
-          <button type="button" class="btn btn-dark" onclick="document.getElementById('AboutDetails').innerHTML = '<img src=&quot;https://upload.wikimedia.org/wikipedia/en/thumb/6/63/IMG_%28business%29.svg/220px-IMG_%28business%29.svg.png&quot;>'" >About The Company</button>
-          <div id="AboutDetails" class="card">
+          <button type="button" class="btn btn-dark" onclick="LoadImg()" >Click Here To View </button>
+          <div id="AboutDetails" class="card my-5">
              <div class="card-body">
-                    This is some text within a card body.
+                    These are some demonstrations of previous and current projects.
                  </div>
         </div>
 
@@ -139,10 +157,10 @@
             <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
             <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
 
-            <form class="form-inline d-flex">
-              <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
-              <button type="submit" class="btn btn-primary mx-auto">Subscribe</button>
-            </form>
+            <div class="form-inline d-flex">
+              <input id="signup-input" type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address..." onkeypress="showAlert();">
+            </div>
+
 
           </div>
         </div>
